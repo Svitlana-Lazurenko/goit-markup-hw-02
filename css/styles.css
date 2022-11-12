@@ -10,6 +10,8 @@
   --tertiary-text-color: rgba(255, 255, 255, 0.6);
 }
 
+/* -------Utility Classes--------- */
+
 body {
   color: var(--primary-text-color);
   font-family: 'Roboto', 'arial', 'helvetica', sans-serif;
@@ -27,10 +29,9 @@ body {
   text-decoration: none;
 }
 
-.logo-link {
-  color: var(--logo-color);
-
-  font-family: 'Raleway';
+.logo-link,
+.accent-logo-link {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -38,7 +39,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.accent-logo {
+.logo-link {
+  color: var(--logo-color);
+}
+
+.accent-logo-link {
   color: var(--accent-logo-color);
 }
 
@@ -48,23 +53,27 @@ body {
 }
 
 /* -------Header------------ */
+.nav-link,
+.hd-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .nav-link {
   color: var(--primary-text-color);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus,
+.hd-contact:hover,
+.hd-contact:focus,
+.nav-link.current {
   color: var(--accent-logo-color);
 }
 
-.hd-contact {
-  color: var(--second-text-color);
-}
-
-.hd-contact:hover {
-  color: var(--accent-logo-color);
-}
-
-/* ---------Main--------- */
+/* ---------Main Студія-------- */
 .hero {
   color: var(--hd-color);
   background-color: var(--ft-color);
@@ -81,6 +90,43 @@ body {
 }
 
 .btn {
+  color: inherit;
+  background-color: var(--accent-logo-color);
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* ---------Main Портфоліо---------- */
+
+.works-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn-menu {
+  color: var(--primary-text-color);
+  background-color: (--second-bg-color);
+  cursor: pointer;
+}
+
+.btn-menu:hover,
+.btn-menu:focus {
   color: var(--hd-color);
   background-color: var(--accent-logo-color);
 }
@@ -88,6 +134,19 @@ body {
 /* ------Footer---------- */
 .footer {
   background-color: var(--ft-color);
+}
+
+.address-list {
+  font-style: inherit;
+}
+
+.physical-address,
+.ft-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
 }
 
 .physical-address {
@@ -98,6 +157,9 @@ body {
   color: var(--tertiary-text-color);
 }
 
-.address-list {
-  font-style: inherit;
+.physical-address:hover,
+.ft-address:hover,
+.physical-address:focus,
+.ft-address:focus {
+  color: var(--accent-logo-color);
 }

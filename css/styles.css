@@ -21,7 +21,8 @@ body {
   list-style: none;
 }
 
-.logo-link,
+.ft-logo-link,
+.hd-logo-link,
 .nav-link,
 .hd-contact,
 .physical-address,
@@ -29,30 +30,31 @@ body {
   text-decoration: none;
 }
 
-.logo-link,
+.ft-logo-link,
+.hd-logo-link,
 .accent-logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-
   letter-spacing: 0.03em;
-}
-
-.logo-link {
-  color: var(--logo-color);
 }
 
 .accent-logo-link {
   color: var(--accent-logo-color);
 }
 
-.hd-contacts,
+.hd-contact,
 .desk {
   color: var(--second-text-color);
 }
 
 /* -------Header------------ */
+
+.hd-logo-link {
+  color: var(--logo-color);
+}
+
 .nav-link,
 .hd-contact {
   font-weight: 500;
@@ -83,7 +85,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -92,14 +93,13 @@ body {
 .btn {
   color: inherit;
   background-color: var(--accent-logo-color);
-  font-family: inherit;
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  text-align: center;
   letter-spacing: 0.06em;
+
   cursor: pointer;
 }
 
@@ -122,6 +122,13 @@ body {
 .btn-menu {
   color: var(--primary-text-color);
   background-color: (--second-bg-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
   cursor: pointer;
 }
 
@@ -132,6 +139,11 @@ body {
 }
 
 /* ------Footer---------- */
+
+.ft-logo-link {
+  color: var(--hd-color);
+}
+
 .footer {
   background-color: var(--ft-color);
 }
@@ -145,7 +157,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 }
 
